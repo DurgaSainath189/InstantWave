@@ -22,7 +22,7 @@ if (!roomId) {
 
 let displayName = sessionStorage.getItem("display_name");
 if (!displayName) {
-  window.location = "lobby.html";
+  window.location = "index.html";
 }
 
 let localTracks = [];
@@ -259,7 +259,7 @@ let leaveStream = async (e) => {
     text: JSON.stringify({ type: "user_left", uid: uid }),
   });
 
-  window.location = "lobby.html";
+  window.location = "index.html";
 };
 
 document.getElementById("camera-btn").addEventListener("click", toggleCamera);
